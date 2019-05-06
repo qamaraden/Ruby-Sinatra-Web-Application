@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= @title %></title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoDCZSwk2xz_X0tFR6RquxqXpYQO7L_dY&callback=initMap">
+    </script>
+
+  <script src="/js/global.js"></script>
+    <style>
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #482A75;
+  color: #FFF;
+  padding: 1% 0;
+  font-size: 1.2em;
+  border: 0;
+}
+.navbar-brand {
+  float: left;
+  min-height: 55px;
+  padding: 0 15px 5px;
+}
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+  color: #FFF;
+  background-color: #800000;
+}
+.navbar-inverse .navbar-nav li a {
+  color: #D5D5D5;
+}
+.carousel-inner .item {
+  height: 415px;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  text-shadow:4px 4px 5px black;
+}
+/* .btn {
+  font-size: 18px;
+  color: #FFF;
+  padding: 12px 22px;
+  background: #800000;
+  border: 2px solid #FFF;
+} */
+.container {
+  margin: 0% auto
+  padding: 0px;
+}
+.col-md-7 {
+margin-top:0px;
+border: #9F0324 medium solid;
+background-color: #9F0324;
+color: #FFF;
+font-family: Arial;
+border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+}
+img.img-rounded.img-responsive {
+  margin left: 0px;
+  width: 300px;
+}
+
+div.container.text-center{
+  background-color: #b19cd9;
+  margin-left: 0px;
+  margin-right: 0px;
+  color: white;
+  width: 100%;
+  font-family: arial;
+ }
+.footer {
+  width: 100%;
+  background-color: #482A75;
+  padding: 3%;
+  color: #FFF;
+  top: 1000px;
+}
+.fa {
+  padding: 15px;
+  font-size: 20px;
+  color: #FFF;
+
+}
+.fa:hover {
+  color: #D5D5D5
+  text-decoration: none;
+}
+.img-rounded {
+  margin: 0px auto;
+}
+
+@media (max width: 900px) {
+  .fa {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
+  }
+
+  h2 {
+    font-size: 1.7em;
+  }
+}
+#logo {
+  width: 100px;
+  height: 50px;
+}
+
+.display-4{
+  font-family: Lobster Two;
+  /* text-shadow:2px 2px 2px white; */
+
+ }
+ div.jumbotron {
+   background-image: url(/images/concert-4.png);
+   height: 400px;
+ }
+ .lead{
+       text-shadow:2px 2px 2px black;
+       color: white;
+  }
+  .rectangle {
+    height: 100px;
+  border-radius: 60px;
+  background-color: #663399;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.rectangle6 {
+  height: 300px;
+  width: 600px;
+border-radius: 60px;
+background-color: grey;
+margin-left: -60px;
+margin-right: 40px;
+margin-bottom: 20px;
+}
+.rectangle3 {
+  height: 100px;
+border-radius: 60px;
+background-color: #663399;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom:20px:
+}
+.rectangle3 a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.rectangle3:after {
+  content: "";
+  display: relative;
+  padding-bottom: 100%;
+}
+
+.rectangle2 {
+position: relative;
+width: 400px;
+height: 200px;
+left: 266px;
+border-radius: 10px;
+background-color: white;
+color: white;
+}
+.rectangle4 {
+position: relative;
+width: 600px;
+height: 300px;
+
+
+margin-left: -65px;
+
+border-color: black;
+border-weight: 20px;
+
+border-radius: 10px;
+background-color: #f2f2f2;
+color: black;
+font-family: arvo;
+}
+
+.rectangle a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.rectangle:after {
+  content: "";
+  display: relative;
+  padding-bottom: 100%;
+}
+
+.jumbotron{
+  margin-left: 0px;
+    margin-right: 0px;
+ }
+ .jumbotron2{
+   height: 500px;
+margin: 0px;
+left: 0px;
+     background-video: url(/videos/Batala_band_01_Videvo.mp4);
+  }
+
+.delete {
+  color: white;
+  background-color: #663399;
+  border-color: white;
+  border-radius: 10px;
+  width: 200px;
+  height: 60px;
+}
+.contbut {
+  color: white;
+  background-color: #663399;
+  border-color: white;
+  border-radius: 10px;
+  width: 200px;
+  height: 60px;
+}
+.contbut a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  width: 500px;
+}
+.contbut2 {
+  color: white;
+  background-color: black;
+  border-color: white;
+  border-radius: 10px;
+  width: 400px;
+  height: 50px;
+}
+.contbut2 a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  width: 500px;
+}
+.background {
+  /* background-image: url(/images/concerts.png); */
+  height: 430px;
+}
+.col-md-3 h3 {
+  color: white;
+  background-color: black;
+}
+.content {
+  height: 180px;
+  background-colour: white;
+
+}
+.content2 {
+  height: 100px;
+  background-colour: white;
+  color: white;
+  margin-top: 10px;
+}
+.random {
+  width: 600px;
+  height:350px;
+
+}
+div.randomimage {
+    margin-left: 29%;
+}
+
+h1 {
+  font-family: Lobster Two;
+  font-size: 60px;
+}
+.rectangle5 {
+  height: 100px;
+border-radius: 60px;
+background-color: #663399;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom:20px:
+}
+.rectangle5 a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.rectangle5:after {
+  content: "";
+  display: relative;
+  padding-bottom: 100%;
+}
+#icon {
+
+  width: 1000px;
+  margin: 1% auto;
+
+}
+video {
+  width:100%;
+  height:500px;
+    background: black;
+
+}
+body {
+  background: white;
+}
+
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+
+
+
+
+    <%= erb(:'partials/navigation', :layout => false) %>
+
+
+
+    <%= yield  %>
+
+    <!-- <footer class="footer container-fluid text-center">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Contact Us</h3>
+
+        </div>
+        <div class="col-sm-4">
+          <img src="/images/logo2.png" class="icon">
+        </div>
+
+        <div class="col-sm-4">
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+        </div>
+
+      </div>
+    </footer> -->
+<br><br><br><br><br><br><br><br>
+    <footer class="footer container-fluid text-center">
+      <div class="row">
+        <div class="col-sm-4">
+
+
+        </div>
+        <div class="col-sm-4">
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="https://facebook.com/" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+        </div>
+
+        <div class="col-sm-4">
+
+        </div>
+
+      </div>
+    </footer>
+
+  </body>
+</html>

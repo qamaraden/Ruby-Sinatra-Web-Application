@@ -1,0 +1,86 @@
+body {
+  background-color: white;
+}
+img {
+  width: 50px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #482A75;
+  color: #FFF;
+  padding: 1% 0;
+  font-size: 1.2em;
+  border: 0;
+}
+.navbar-brand {
+  float: left;
+  min-height: 55px;
+  padding: 0 15px 5px;
+}
+
+#logo {
+  float: left;
+  min-height: 55px;
+  padding: 0 15px 5px;
+}
+
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+  color: #FFF;
+  background-color: #800000;
+}
+.navbar-inverse .navbar-nav li a {
+  color: #D5D5D5;
+}
+.carousel-inner .item {
+  height: 415px;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  text-shadow:4px 4px 5px black;
+}
+/* .btn {
+  font-size: 18px;
+  color: #FFF;
+  padding: 12px 22px;
+  background: #800000;
+  border: 2px solid #FFF;
+} */
+.container {
+  margin: 0% auto
+}
+
+#icon {
+
+  width: 1000px;
+  margin: 1% auto;
+
+}
+.footer {
+  width: 100%;
+  background-color: #800000;
+  padding: 3%;
+  color: #FFF;
+}
+.fa {
+  padding: 15px;
+  font-size: 20px;
+  color: #FFF;
+
+}
+.fa:hover {
+  color: #D5D5D5
+  text-decoration: none;
+}
+.img-rounded {
+  margin: 0px auto;
+}
+
+#map {
+     height: 400px;  /* The height is 400 pixels */
+     width: 100%;  /* The width is the width of the web page */
+    }

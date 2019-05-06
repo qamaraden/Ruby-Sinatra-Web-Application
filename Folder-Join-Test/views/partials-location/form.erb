@@ -1,0 +1,16 @@
+<form action="/locations/<%= @location.id %>" method="post">
+  <div>
+    <label>Title</label>
+    <input type="text" name="title" placeholder="Enter a title" value="<%= @location.title %>">
+  </div>
+  <div>
+    <label>Body</label>
+    <textarea name="body" rows="8" cols="80" placeholder="Put your post"><%= @location.body %></textarea>
+  </div>
+  <div>
+    <input type="submit" value="Save Post">
+  </div>
+  <% if(@location.id) %>
+  <input type="hidden" name="_method" value="put">
+  <% end %>
+</form>
