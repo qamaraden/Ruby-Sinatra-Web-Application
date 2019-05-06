@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-md-12 text-center">
+<h1>Edit</h1>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-12 text-center">
+  <label>TITLE</label>
+
+</div>
+
+
+<form action="/<%= @post.id %>" method="post">
+  <div class="row">
+    <div class="col-md-12 text-center">
+
+    <input type="text" name="title" placeholder="Enter a title" value="<%= @post.title %>">
+    </div>
+  </div>
+
+<br>
+
+  <div class="row">
+    <div class="col-md-12 text-center">
+  <div>
+
+    <textarea name="body" rows="8" cols="80" placeholder="Put your post"><%= @post.body %></textarea>
+  </div>
+  </div>
+  </div>
+
+<br> <br>
+  <div class="row">
+    <div class="col-md-12 text-center">
+  <input class="delete"type="submit" value="Save Post">
+    </div>
+  </div>
+
+
+
+
+  <% if(@post.id) %>
+  <input type="hidden" name="_method" value="put">
+  <% end %>
+</form>

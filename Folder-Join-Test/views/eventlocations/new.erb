@@ -1,0 +1,17 @@
+<h1>New Post</h1>
+<form action="/<%= @eventlocation.locationid %>" method="post">
+  <div>
+    <label>Title</label>
+    <input type="text" name="title" placeholder="Enter a title" value="<%= @eventlocation.title %>">
+  </div>
+  <div>
+    <label>Body</label>
+    <textarea name="body" rows="8" cols="80" placeholder="Put your post"><%= @eventlocation.location %></textarea>
+  </div>
+  <div>
+    <input type="submit" value="Save Post">
+  </div>
+  <% if(@eventlocation.locationid) %>
+  <input type="hidden" name="_method" value="put">
+  <% end %>
+</form>

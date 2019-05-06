@@ -1,0 +1,68 @@
+
+
+<div class="background">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1><%= @post.title %></h1>
+      </div>
+    </div>
+
+    <div class="randomimage"><img class="random" src="https://picsum.photos/200/300" alt=""></div>
+    <br>
+  
+
+    </div>
+    <br><br><br>
+    <div class="row">
+
+      <div class="row">
+        <div class="col-md-4 text-center"></div>
+        <div class="col-md-4 text-center">
+            <div class="rectangle4">
+                <br>
+
+            <h4><%= @post.body %></h4>
+
+            </div>
+        </div>
+        <div class="col-md-4 text-center"></div>
+      </div>
+
+
+<br>
+
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button class="contbut">
+            <div class="content">
+              <h4>
+              <a href="/<%= @post.id %>/edit">Edit</a>
+              <h4>
+            </div>
+            </button>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <form action="/<%= @post.id %>" method="post">
+
+              <div class="content">
+                <h4>
+                  <br>
+            <input type="hidden" name="_method" value="DELETE">
+            <input type="submit" name="" value="DELETE" class="delete">
+            <h4>
+          </div>
+
+          </form>
+
+        </div>
+      </div>
+<br>
+<br>
+<br>
+</div>
